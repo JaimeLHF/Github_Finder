@@ -1,0 +1,16 @@
+.btn_back {
+    background-color: #4ed8c864;
+    padding: .8rem 2rem;
+    border-radius: 5px;
+    text-align: center;
+    transition: .3s;
+    border: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+}
+
+.btn_back:hover {
+    background-color: #4ed8c82c;
+    cursor: pointer;
+}

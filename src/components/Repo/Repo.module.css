@@ -1,0 +1,55 @@
+.repo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 2px solid rgba(53, 53, 254, 0.544);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+p {
+    text-align: start;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.stats {
+    display: flex;
+    gap: 1rem;
+}
+
+.stats div {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.star_forks :first-child {
+    background-color: #4ed8c8d3;
+    padding: .2rem .4rem;
+    font-size: xx-large;
+}
+
+.star_forks span {
+    padding: 0 .8rem;
+}
+
+a {
+    background-color: #4ed8c864;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: .8rem;
+    border-radius: 5px;
+    width: 35%;
+    text-align: center;
+    transition: .3s;
+}
+
+a:hover {
+    background-color: #4ed8c8b5;
+}
