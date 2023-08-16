@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 import styles from "./User.module.css"
 
-const User = ({ login, avatar_url, followers, follwing, location }: UserProps) => {
+const User = ({ login, avatar_url, followers, following, location }: UserProps) => {
 
     return (
         <div className={styles.user}>
@@ -24,7 +24,7 @@ const User = ({ login, avatar_url, followers, follwing, location }: UserProps) =
                 </div>
                 <div>
                     <p>Seguindo:</p>
-                    {follwing > 0 ? <p className={styles.number}>{follwing}</p> : <p className={styles.number}>{0}</p>}
+                    {following > 0 ? <p className={styles.number}>{following}</p> : <p className={styles.number}>{0}</p>}
                 </div>
             </div>
             <Link to={`/repos/${login}`}>Ver melhores projetos</Link>

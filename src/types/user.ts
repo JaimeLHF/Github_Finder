@@ -3,5 +3,5 @@ export type UserProps = {
     login: string
     location: string
     followers: number
-    follwing: number
+    following: number
 }

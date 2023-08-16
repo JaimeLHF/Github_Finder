@@ -19,10 +19,12 @@ export default function Repos() {
 
         const loadRepos = async function (username: string) {
             setIsLoading(true)
-            const res = await fetch(`https://api.github.com/users/${username}/repos`);
+
+            const res = await fetch(`https://api.github.com/users/${username}/repos`)
 
             const data = await res.json()
-            console.log(data)
+            data.sort((a: RepoProps, b: RepoProps) => b.stargazers_count - a.stargazers_count);          
+
             setRepos(data)
             setIsLoading(false)
         }

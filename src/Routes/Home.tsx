@@ -22,6 +22,8 @@ const Home = () => {
 
         const data = await res.json();
 
+        console.log(data)
+
         setIsLoading(false)
 
         if (res.status === 404) {
@@ -29,14 +31,14 @@ const Home = () => {
             return
         }
               
-        const { avatar_url, login, location, followers, follwing } = data
+        const { avatar_url, login, location, followers, following } = data
 
         const userData: UserProps = {
             avatar_url,
             login,
             location,
             followers,
-            follwing
+            following
         };
 
         setUser(userData)

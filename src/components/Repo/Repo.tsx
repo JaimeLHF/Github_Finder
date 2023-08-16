@@ -5,7 +5,10 @@ import { BsCodeSlash } from "react-icons/bs"
 import { AiOutlineStar, AiOutlineFork, AiFillGithub } from 'react-icons/ai'
 
 
-export default function Repo({ name, language, html_url, forks, star }: RepoProps) {
+
+export default function Repo({ name, language, html_url, forks, stargazers_count }: RepoProps) {
+     
+
     return (
         <div className={styles.repo}>
             <h3>{name}</h3>
@@ -17,7 +20,7 @@ export default function Repo({ name, language, html_url, forks, star }: RepoProp
             <div className={styles.stats}>
                 <div className={styles.star_forks}>
                     <AiOutlineStar />
-                    <span>{star} 0</span>
+                    <span>{stargazers_count}</span>
                 </div>
                 <div className={styles.star_forks}>
                     <AiOutlineFork />
